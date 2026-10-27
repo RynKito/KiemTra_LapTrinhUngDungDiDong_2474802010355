@@ -1,5 +1,4 @@
-package com.example.kiemtra_laptrinhungdungdidong_mssv
-
+package vn.edu.vlu.myapplication
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Patterns
