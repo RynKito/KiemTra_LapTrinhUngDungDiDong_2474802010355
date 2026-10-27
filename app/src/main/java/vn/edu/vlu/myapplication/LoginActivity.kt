@@ -1,4 +1,6 @@
 package vn.edu.vlu.myapplication
+
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Patterns
@@ -31,6 +33,10 @@ class LoginActivity : AppCompatActivity() {
                 else -> {
                     tvStatus.setTextColor(Color.parseColor("#2E7D32"))
                     tvStatus.text = "Xác thực thành công!"
+
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    intent.putExtra("EMAIL", email)
+                    startActivity(intent)
                 }
             }
         }
